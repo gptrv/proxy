@@ -1,5 +1,12 @@
-.title {
-    div {
-        background-color: yellow;
+.app {
+    display: flex;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    &__header {
+        display: block;
+        margin-right: 16px;
     }
 }
