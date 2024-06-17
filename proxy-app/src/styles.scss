@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x:hidden;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    margin-right: calc((100vw - 100%) * -1); /* убирает прыгание контента при появлении скроллбара */
+}
+
+a {
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.title {
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@media (max-width: 400px) {
+    body {
+        font-size: 14px;
+    }
+}
+

@@ -1,12 +1,29 @@
-.title {
-    //font-family: "Roboto Mono", monospace;
-    //font-optical-sizing: auto;
-    font-weight: 500;
-    //font-style: normal;
-}
 .subtitle {
-    //font-family: "Roboto Mono", monospace;
-    //font-optical-sizing: auto;
+    margin-bottom: 24px;
     font-weight: 400;
-    //font-style: normal;
+}
+.clipboard {
+    display: block;
+    margin-top: 8px;
+}
+.image {
+    display: block;
+    max-height: 720px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+.logo {
+    height: 150px;
+}
+.wrapper {
+    display: flex;
+}
+
+@media (max-width: 730px) {
+    .wrapper {
+        display: block;
+    }
+    .image {
+        margin-right: 0px;
+    }
 }
