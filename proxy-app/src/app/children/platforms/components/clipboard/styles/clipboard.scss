@@ -1,0 +1,47 @@
+.clipboard {
+    //display: flex;
+    //border: 2px solid ;
+    //position: relative;
+    //border-radius: 8px;
+    //cursor: pointer;
+    //border-color: #d0d0d0;
+    padding: 12px 12px 6px 12px;
+
+
+    &__text {
+        font-size: 14px;
+        word-wrap: break-word;
+        width: 100%;
+        //padding-right: 40px;
+        //padding-bottom: 8px;
+        //padding: 8px 40px 8px 8px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 8px;
+        color: #d0d0d0;
+        &-green {
+            color: #AAFF00;
+        }
+    }
+
+    .mat-mdc-card-content:first-child {
+        padding-top: 0;
+    }
+    .mat-mdc-card-content {
+        padding-left: 0;
+    }
+    .mdc-card__actions {
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .clipboard {
+        &__text {
+            font-size: 12px;
+        }
+    }
+}

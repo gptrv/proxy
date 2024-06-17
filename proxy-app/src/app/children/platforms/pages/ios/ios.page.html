@@ -1,51 +1,63 @@
 <div class="ios">
-    <div class="title">
-        Установка клиента V2BOX
+    <div class="header">
+        <div class="title">
+            Установка клиента V2BOX для iOS
+        </div>
+        <img class="logo" src="assets/images/v2box.jpg">
+        <p>
+            V2BOX - клиент, с помощью которого можно будет подклбчиться к нашему прокси-серверу. Для работы используется VLESS протокол.
+        </p>
     </div>
     <div class="steps">
         <div class="subtitle">
-            1. Скачать приложение с AppStore
+            1. Скачать приложение из
+            <a mat-raised-button href="https://apps.apple.com/ru/app/v2box-v2ray-client/id6446814690" target="_blank" color="accent">AppStore</a>
+<!--            <button (click)="goToLink('https://apps.apple.com/ru/app/v2box-v2ray-client/id6446814690')" mat-raised-button color="accent">AppStore</button>-->
         </div>
+        <img class="image" src="assets/images/app.PNG">
         <div class="subtitle">
             2. Запросить ссылку на подключение в
-            <a href="https://t.me/gptrv">телеграм (https://t.me/gptrv)</a>
+            <a mat-raised-button href="https://t.me/gptrv" target="_blank" color="accent">телеграм</a>
         </div>
         <div class="subtitle">
-            3. Скопировать ссылку
+            3. Открыть приложение, перйти в раздел "Configs", и добавить подписку "Add Subscription"
+        </div>
+        <div class="wrapper">
+            <img class="image" src="assets/images/first_step.png">
+            <img class="image" src="assets/images/second_step.png">
         </div>
         <div class="subtitle">
-            4. Открыть приложение, перйти в раздел "Configs", нажать на "+", после на "Add Subscription"
+            4. Придумайте название для вашей подписки, вставьте ссылку из пункта 2 и нажмите на "Add Subscribe"
+        </div>
+        <img class="image" src="assets/images/fourth_step.png">
+        <div class="subtitle">
+            Увидели алерт "Subscribe added successfully" - идем дальше, нет - напишите в
+            <a mat-raised-button href="https://t.me/gptrv" target="_blank" color="accent">телеграм</a>
         </div>
         <div class="subtitle">
-            5. Придумайте название для вашей подписки, вставьте ссылку и нажмите на "Add Subscribe"
+            5. Жмем на "VLESS" (выбираем настройки)
+        </div>
+        <img class="image" src="assets/images/fifth_step.png">
+
+        <div class="subtitle">
+            6. Переходим на главную "Home"
         </div>
         <div class="subtitle">
-            Увидели алерт "Subscribe added successfully" - идем дальше, нет - напишите <a href="https://t.me/gptrv">нам</a>
-        </div>
-        <div class="subtitle">
-            6. Жмем на "VLESS" (выбираем настройки)
-        </div>
-        <div class="subtitle">
-            7. Переходим на главную "Home"
-        </div>
-        <div class="subtitle">
-            Осталось совсем немного, мы уже у финиша...
-        </div>
-        <div class="subtitle">
-            8. Скопировать настройки
-            <p>
-                v2box://routes?multi=W3sicmVtYXJrIjoic2V0dGluZ3MiLCJtYXRjaE1vZGUiOiJyZWdleHAiLCJpc0VuYWJsZSI6dHJ1ZSwidGFnIjoiZGlyZWN0IiwibGlzdElQIjpbImdlb2lwOlJVIiwiZ2VvaXA6cHJpdmF0ZSJdLCJuYW1lIjoicm91dGUuM0JBN0E0RkQtNjFENi00OTBCLUIzMkQtOTU0NkVFQThBODQwIiwidHlwZSI6IkRvbWFpbiIsImxpc3QiOlsiLipcXC5ydSQiXX1d
-            </p>
+            7. Скопировать настройки:
+            <app-clipboard class="clipboard" [text]="settings"></app-clipboard>
         </div>
         <div class="subtitle">
             8. Переходим в "Routing" и нажимаем Enable routing, сверху нажмите вставить
         </div>
+        <img class="image" src="assets/images/seventh_step.png">
         <div class="subtitle">
-            SUCCESS!
-            9. На главной нажмите "Slide to Connect"
+            9. Перезапускаем приложение
         </div>
         <div class="subtitle">
-            Если хотите, чтобы клиент работал, только когда телефон включен - кликните на чекбокс "Stop on sleep". Поможем вам сохранить батарейку.
+            10. На главной нажмите "Slide to Connect"
+        </div>
+        <div class="subtitle">
+            Если хотите, чтобы клиент работал, только когда телефон включен - кликните на чекбокс "Stop on sleep".
         </div>
     </div>
 </div>

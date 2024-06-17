@@ -1,18 +1,6 @@
 .header {
-    //display: flex;
-    //justify-content: space-between;
-    &__aside {
-        margin-bottom: 16px;
-    }
-    &__title {
-        font-weight: 500;
-    }
-    &__button {
-        margin-bottom: 8px;
-        font-weight: 400;
-    }
-    &__navigation {
-        display: flex;
-        flex-direction: column;
-    }
+    padding-bottom: 24px;
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: 600;
 }
